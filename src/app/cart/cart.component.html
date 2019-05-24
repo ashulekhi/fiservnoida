@@ -1,0 +1,14 @@
+<div *ngIf="cartitems && cartitems.length>0" class="container-fluid">
+<div  *ngFor="let cartitem of cartitems" class="row">
+  <div class="col-md-8">
+    <img src={{cartitem.product.image}} style="height:50px ; width:50px" alt="">
+    <p>{{cartitem.product.name}}</p>
+    <p>{{cartitem.product.price}}</p>
+    
+  </div>
+  <div class="col-md-4">
+    <button>Remove</button>
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,11 @@
+<div (click)="showProduct()"  *ngIf="product"  class="card" style="width: 18rem; margin:10px">
+  <img style="height:200px" class="card-img-top" src={{product.image}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text">{{product.price|discount}}</p>
+  </div>
+</div>
+
+
+
+
